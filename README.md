@@ -1,24 +1,132 @@
-# Cross-Modal Satellite Image Retrieval
+# Cross-Modal Remote Sensing Retrieval
 
-## Project Overview
-Cross-modal retrieval system using Sentinel-1 SAR and Sentinel-2 multispectral satellite imagery from BigEarthNet v2.0.
+A deep learning project for **cross-modal image retrieval** using **Sentinel-1 (SAR)** and **Sentinel-2 (Optical)** satellite imagery from the **BigEarthNet** dataset.
 
-## Tech Stack
+The objective is to learn a shared feature space where corresponding Sentinel-1 and Sentinel-2 image pairs are mapped close together, enabling retrieval across different sensing modalities.
+
+---
+
+## 📌 Project Objectives
+
+- Build a cross-modal image retrieval system.
+- Learn joint embeddings for Sentinel-1 and Sentinel-2 images.
+- Explore and preprocess the BigEarthNet dataset.
+- Train and evaluate a Two-Tower retrieval model.
+- Compare retrieval performance using standard evaluation metrics.
+
+---
+
+## 📂 Project Structure
+
+```
+cross-modal-remote-sensing-retrieval/
+│
+├── configs/
+├── data/
+├── docs/
+├── models/
+├── notebooks/
+├── outputs/
+├── scripts/
+├── tests/
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🛰 Dataset
+
+**Dataset:** BigEarthNet
+
+- Sentinel-1 (SAR)
+- Sentinel-2 (Optical)
+
+> The dataset is **not included** in this repository because of its large size.
+
+---
+
+## 🛠 Technologies
+
 - Python
-- PyTorch
-- FAISS
-- Rasterio
-- Pandas
 - NumPy
+- Pandas
 - Matplotlib
+- Rasterio
+- Scikit-learn
+- Jupyter Notebook
 
-## Folder Structure
-(Add your folder tree)
+Future additions:
 
-## Setup
+- PyTorch
+- TorchVision
+- TIMM
+- FAISS
 
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Move into the project directory:
+
+```bash
+cd cross-modal-remote-sensing-retrieval
+```
+
+Create a virtual environment:
+
+```bash
 python -m venv venv
+```
 
+Activate the virtual environment:
+
+### Windows
+
+```bash
 venv\Scripts\activate
+```
 
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+## 📅 Current Status
+
+**Week 1**
+
+- ✅ Repository created
+- ✅ Project structure initialized
+- ✅ Virtual environment configured
+- ✅ Development environment ready
+- ⏳ Dataset exploration in progress
+
+---
+
+## 👥 Team
+
+Developed as part of a team project on **Cross-Modal Remote Sensing Retrieval**.
+
+---
+
+## 📄 License
+
+This project is intended for educational and research purposes.

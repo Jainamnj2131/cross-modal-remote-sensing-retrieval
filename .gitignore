@@ -1,5 +1,23 @@
+# Virtual Environment
 venv/
+
+# Python
 __pycache__/
 *.pyc
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Dataset (Never upload datasets)
 data/
+
+# VS Code
+.vscode/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Generated outputs (optional)
+outputs/checkpoints/
+outputs/images/
