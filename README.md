@@ -34,7 +34,21 @@ cross-modal-remote-sensing-retrieval/
 ├── README.md
 └── requirements.txt
 ```
+### Folder Description
 
+| Folder/File | Purpose |
+|--------------|---------|
+| `configs/` | Stores project configuration files (to be added later). |
+| `data/` | Contains the Sentinel-1, Sentinel-2, and metadata datasets. This folder is ignored by Git because the datasets are too large. |
+| `docs/` | Project documentation such as setup instructions, references, and project logs. |
+| `models/` | Stores model architectures and related code. |
+| `notebooks/` | Jupyter notebooks used for experimentation and data exploration. |
+| `outputs/` | Stores generated outputs such as images, checkpoints, and results. |
+| `scripts/` | Python scripts for data processing, visualization, training, and evaluation. |
+| `tests/` | Contains test scripts to verify project components. |
+| `.gitignore` | Specifies files and folders that Git should ignore. |
+| `README.md` | Overview of the project, setup instructions, and repository documentation. |
+| `requirements.txt` | Lists the Python packages required to run the project. |
 ---
 
 ## 🛰 Dataset
