@@ -10,3 +10,5 @@ PyYAML
 jupyter
 notebook
 pyarrow
+torch
+torchvision
