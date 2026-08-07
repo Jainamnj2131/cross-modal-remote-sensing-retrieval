@@ -21,3 +21,6 @@ Thumbs.db
 # Generated outputs (optional)
 outputs/checkpoints/
 outputs/images/
+
+# Generated metadata
+outputs/metadata/paired_metadata.csv

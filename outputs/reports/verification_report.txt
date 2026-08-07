@@ -1,0 +1,12 @@
+============================================================
+BigEarthNet Metadata-Level S1 <-> S2 Pair Verification Report
+============================================================
+Metadata Source:        D:/Dataset/metadata.parquet
+Total Samples:          480038
+Valid Pairs:            480038
+Missing S1 Identifiers: 0
+Missing S2 Identifiers: 0
+Invalid Entries:        0
+============================================================
+Verification Status:    SUCCESS (100% Paired)
+============================================================
