@@ -3,7 +3,7 @@ data:
   dataset_dir: "D:/Dataset"
   metadata_path: "D:/Dataset/metadata.parquet"
   batch_size: 16
-  num_workers: 2
+  num_workers: 0
   # Sentinel-2 band selection (RGB for Week 2 debugging; can easily be changed later)
   bands:
     - "B04"
