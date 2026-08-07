@@ -1,26 +1,72 @@
-# Virtual Environment
-venv/
-
+# =========================
 # Python
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Jupyter
-.ipynb_checkpoints/
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
 
-# Dataset (Never upload datasets)
-data/
-
-# VS Code
+# =========================
+# IDE
+# =========================
 .vscode/
+.idea/
 
+# =========================
 # Operating System
+# =========================
 .DS_Store
 Thumbs.db
 
-# Generated outputs (optional)
-outputs/checkpoints/
-outputs/images/
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
 
-# Generated metadata
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Python cache
+# =========================
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# =========================
+# Dataset (Never Commit)
+# =========================
+data/
+D:/Dataset/
+
+# =========================
+# Generated Outputs
+# =========================
+outputs/checkpoints/
+outputs/logs/
+outputs/visualizations/
+outputs/reports/
+
+# Ignore generated metadata
 outputs/metadata/paired_metadata.csv
+
+# =========================
+# Models
+# =========================
+*.pth
+*.pt
+*.ckpt
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.bak
+*.swp
