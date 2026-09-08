@@ -1,0 +1,48 @@
+============================================================
+BASELINE RETRIEVAL RESULTS SUMMARY
+============================================================
+
+Dataset:
+Validation set: 4,500 paired SAR-MS samples
+
+------------------------------------------------------------
+RETRIEVAL RESULTS
+------------------------------------------------------------
+
+SAR -> MS
+Recall@1:  0.2222%
+Recall@5:  0.4889%
+Recall@10: 0.8222%
+Average retrieval time: 0.0589 ms/query
+
+MS -> SAR
+Recall@1:  0.4889%
+Recall@5:  1.5111%
+Recall@10: 2.1333%
+Average retrieval time: 0.0817 ms/query
+
+SAR -> SAR
+Recall@1:  15.1333%
+Recall@5:  26.3111%
+Recall@10: 33.4667%
+Average retrieval time: 0.0802 ms/query
+
+MS -> MS
+Recall@1:  18.6444%
+Recall@5:  31.5778%
+Recall@10: 39.6667%
+Average retrieval time: 0.0812 ms/query
+
+------------------------------------------------------------
+EVALUATION DEFINITIONS
+------------------------------------------------------------
+
+Cross-modal retrieval:
+A result is correct when the exact paired patch is retrieved.
+
+Same-modal retrieval:
+A result is considered relevant when it shares at least one
+land-cover label with the query patch. The query patch itself
+is excluded from the retrieval results.
+
+============================================================

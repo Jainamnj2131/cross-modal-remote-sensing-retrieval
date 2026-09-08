@@ -1,0 +1,24 @@
+============================================================
+BASELINE CROSS-MODAL RETRIEVAL RESULTS
+SAR -> MS
+============================================================
+
+Total queries: 4500
+Gallery size: 4500
+Embedding dimension: 2048
+Average retrieval time: 0.0589 ms/query
+
+ID ALIGNMENT
+------------------------------------------------------------
+SAR embedding IDs: 4500
+MS embedding IDs: 4500
+SAR -> CSV overlap: 4500
+MS -> CSV overlap: 4500
+ID alignment: PASSED
+
+RECALL RESULTS
+------------------------------------------------------------
+Recall@1:  0.002222 (0.2222%) [10/4500]
+Recall@5:  0.004889 (0.4889%) [22/4500]
+Recall@10: 0.008222 (0.8222%) [37/4500]
+============================================================

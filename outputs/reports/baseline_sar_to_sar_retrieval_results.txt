@@ -1,0 +1,22 @@
+============================================================
+BASELINE SAME-MODAL RETRIEVAL RESULTS
+SAR -> SAR
+============================================================
+
+Total valid queries: 4500
+Gallery size: 4500
+Embedding dimension: 2048
+Average retrieval time: 0.0802 ms/query
+
+RELEVANCE DEFINITION
+------------------------------------------------------------
+A retrieved patch is relevant if it shares at least one
+land-cover label with the query patch.
+The query patch itself is excluded from retrieval.
+
+RECALL RESULTS
+------------------------------------------------------------
+Recall@1:  0.151333 (15.1333%) [681/4500]
+Recall@5:  0.263111 (26.3111%) [1184/4500]
+Recall@10: 0.334667 (33.4667%) [1506/4500]
+============================================================
