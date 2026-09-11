@@ -29,13 +29,9 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # =========================
-# Logs
+# Logs / Caches
 # =========================
 *.log
-
-# =========================
-# Python cache
-# =========================
 .pytest_cache/
 .mypy_cache/
 .cache/
@@ -47,18 +43,53 @@ data/
 D:/Dataset/
 
 # =========================
-# Generated Outputs
+# Large / Local Dataset Copies
 # =========================
+# Required Sentinel-1/Sentinel-2 subsets are local only.
+# Never commit satellite image data.
+BigEarthNet-S1-Required/
+BigEarthNet-S2-Required/
+
+# =========================
+# Generated Checkpoints
+# =========================
+# Model checkpoints are large and will be shared separately when needed.
 outputs/checkpoints/
-outputs/logs/
-outputs/visualizations/
-outputs/reports/
-
-# Ignore generated metadata
-outputs/metadata/paired_metadata.csv
 
 # =========================
-# Models
+# Generated Training Logs
+# =========================
+# Keep generated logs local by default.
+outputs/logs/
+
+# Allow Week 4 training metrics and hyperparameters.
+!outputs/logs/
+!outputs/logs/retrieval_training/
+!outputs/logs/retrieval_training/version_3/
+!outputs/logs/retrieval_training/version_3/metrics.csv
+!outputs/logs/retrieval_training/version_3/hparams.yaml
+
+# =========================
+# Generated Visualizations
+# =========================
+outputs/visualizations/
+outputs/images/
+
+# =========================
+# Generated Embeddings
+# =========================
+# Embeddings can become large and are regenerated during evaluation.
+outputs/embeddings/
+
+# =========================
+# Generated Metadata
+# =========================
+# Keep paired metadata out of Git.
+outputs/metadata/paired_metadata.csv
+outputs/.s1_patch_cache.json
+
+# =========================
+# Models / Large Files
 # =========================
 *.pth
 *.pt

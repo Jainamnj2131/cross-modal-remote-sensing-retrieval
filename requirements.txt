@@ -10,5 +10,12 @@ PyYAML
 jupyter
 notebook
 pyarrow
-torch
-torchvision
+
+torch==2.13.0
+torchvision==0.28.0
+
+lightning==2.6.6
+
+faiss-cpu
+
+Flask
