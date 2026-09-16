@@ -101,3 +101,7 @@ outputs/.s1_patch_cache.json
 *.tmp
 *.bak
 *.swp
+# =========================
+# Generated FAISS Indices
+# =========================
+outputs/indices/

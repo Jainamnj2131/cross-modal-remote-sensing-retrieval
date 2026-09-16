@@ -1,0 +1,57 @@
+WEEK 5 — FINAL FAISS RETRIEVAL AND TEST SET EVALUATION
+========================================================================
+
+Dataset / evaluation size: 4,500 test pairs
+
+Embedding dimension: 512
+
+FAISS index: IndexFlatIP
+
+Cross-modal relevance:
+Exact paired patch ID.
+
+Same-modal relevance:
+At least one shared land-cover label; query item excluded.
+
+NOTE:
+Baseline mAP values are not populated because the Week 3 baseline records available for this final comparison contain Recall@K and retrieval time, but do not contain baseline mAP values.
+
+                 Mode  Recall@1  Recall@5  Recall@10       mAP  Avg Retrieval Time (ms)
+SAR -> SAR (baseline) 15.133300 26.311100  33.466700       N/A                 0.080200
+  MS -> MS (baseline) 18.644400 31.577800  39.666700       N/A                 0.081200
+ SAR -> MS (baseline)  0.222200  0.488900   0.822200       N/A                 0.058900
+ MS -> SAR (baseline)  0.488900  1.511100   2.133300       N/A                 0.081700
+ SAR -> SAR (trained) 53.400000 85.977778  92.488889 61.239698                 0.011819
+   MS -> MS (trained) 57.844444 87.044444  93.466667 64.086988                 0.011255
+  SAR -> MS (trained) 38.777778 64.822222  75.044444       N/A                 0.012265
+  MS -> SAR (trained) 37.044444 63.733333  74.000000       N/A                 0.013881
+
+TRAINED CROSS-MODAL RESULTS
+------------------------------------------------------------------------
+SAR -> MS:
+Recall@1 = 38.7778%
+Recall@5 = 64.8222%
+Recall@10 = 75.0444%
+Average retrieval time = 0.0123 ms/query
+
+MS -> SAR:
+Recall@1 = 37.0444%
+Recall@5 = 63.7333%
+Recall@10 = 74.0000%
+Average retrieval time = 0.0139 ms/query
+
+TRAINED SAME-MODAL RESULTS
+------------------------------------------------------------------------
+SAR -> SAR:
+Recall@1 = 53.4000%
+Recall@5 = 85.9778%
+Recall@10 = 92.4889%
+mAP@10 = 61.2397%
+Average retrieval time = 0.0118 ms/query
+
+MS -> MS:
+Recall@1 = 57.8444%
+Recall@5 = 87.0444%
+Recall@10 = 93.4667%
+mAP@10 = 64.0870%
+Average retrieval time = 0.0113 ms/query
