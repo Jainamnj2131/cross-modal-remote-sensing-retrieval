@@ -620,14 +620,40 @@ pip install -r requirements.txt
 - ✅ Training loss plot generated
 - ✅ Training results documented
 
-## Next
+Week 5 — Retrieval Evaluation & FAISS
+Day 1–2: FAISS Index Construction
 
-- ⏳ Generate validation/test embeddings using the trained checkpoint
-- ⏳ Run trained cross-modal retrieval evaluation
-- ⏳ Compare trained retrieval performance against the Week 3 baseline
-- ⏳ Evaluate final test-set performance
-- ⏳ Integrate retrieval results into the application
-- ⏳ Prepare final experiments and research documentation
+Built separate FAISS gallery indices for the trained test embeddings:
+
+SAR gallery: trained_test_sar_embeddings.npy — 4,500 × 512
+MS gallery: trained_test_ms_embeddings.npy — 4,500 × 512
+Used IndexFlatIP for similarity search on L2-normalized embeddings.
+Verified both indices after saving and reloading successfully.
+Day 3–4: Cross-Modal Retrieval Evaluation
+
+Evaluated the trained model on the 4,500-pair test set using paired patch IDs as ground truth.
+
+Retrieval Mode	Recall@1	Recall@5	Recall@10	Avg. Retrieval Time
+SAR → MS	38.78%	64.82%	75.04%	0.0123 ms/query
+MS → SAR	37.04%	63.73%	74.00%	0.0139 ms/query
+Day 5–7: Same-Modal Retrieval Evaluation
+
+Evaluated same-modal retrieval using shared land-cover labels as relevance, with the query item excluded from its own gallery.
+
+Retrieval Mode	Recall@1	Recall@5	Recall@10	mAP@10	Avg. Retrieval Time
+SAR → SAR	      53.40%	85.98%	92.49%	61.24%	       0.0118 ms/query
+MS → MS	      57.84%	87.04%	93.47%	64.09%	       0.0113 ms/query
+
+Week 5 Deliverables
+Implemented trained test-set embedding extraction.
+Built and verified SAR and MS FAISS indices.
+Implemented cross-modal retrieval evaluation.
+Implemented same-modal retrieval evaluation with mAP@10.
+Generated final comparison CSV and text report.
+Added Week 5 evaluation scripts and results to the repository.
+Updated .gitignore to exclude generated FAISS indices and other large/generated artifacts.
+
+Status: Week 5 completed.
 
 ---
 
